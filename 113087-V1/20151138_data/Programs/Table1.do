@@ -3,6 +3,7 @@
 set more off
 use "Data/VillageDataset.dta", clear
 
+
 	* Number of Providers
 	gen np_cluster=np_market-np_location
 	tabstat np_market np_location np_cluster if location==1, stat(mean median sd) save
