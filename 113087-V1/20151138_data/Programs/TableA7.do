@@ -46,7 +46,7 @@ foreach yvar in rec1 rec2 rec3 {
 	}
 	
 xml_tab s1_rec1 s1_rec2 s1_rec3 s2_rec1 s2_rec2 s2_rec3, ///
-	save("Output\TableA7.xml") replace sheet(TableA7A) font("garamond" 11) ///
+	save("Output/TableA7.xml") replace sheet(TableA7A) font("garamond" 11) ///
 	keep(private) below stats(r2 N) format(SCLR0 (SCCR0 NCCR3 NCCR3))	
 	
 mat means=s1_rec1_mean,s1_rec2_mean,s1_rec3_mean,s2_rec1_mean,s2_rec2_mean,s2_rec3_mean	
